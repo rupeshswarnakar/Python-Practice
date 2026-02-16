@@ -1,6 +1,6 @@
 # Python-Practice
 
-Q.1 
+## Q.1 
 ```
 String Cleaning & Transformation
 Write a Python function that takes a sentence and performs the following:
@@ -15,7 +15,7 @@ Input:  "data engineering rocks"
 Output: "Dt_Engnrng_Rcks"
 ```
 
-Answer 1:
+## Answer 1:
 ```
 words = "data engineering rocks"
 vowels = ["a", "e", "i", "o", "u"]
@@ -45,7 +45,7 @@ final = "_".join(new_list)
 print(final)
 ```
 
-Q.2
+## Q.2
 ```
 Dictionary Aggregation
 Given a list of dictionaries representing sales transactions:
@@ -62,7 +62,7 @@ Book: 20
 Pencil: 5
 ```
 
-Answer 2:
+## Answer 2:
 ```
 total = {}
 
@@ -77,7 +77,7 @@ for sale in sales:
 print(total)
 ```
 
-Q.3
+## Q.3
 ```
 Write a Python function that takes a list of integers and returns a new list containing elements that appear exactly once.
 Example:
@@ -85,7 +85,7 @@ Input: [4, 5, 4, 6, 7, 5, 8]
 Output: [6, 7, 8]
 ```
 
-Answer 3:
+## Answer 3:
 ```
 List = []
 
