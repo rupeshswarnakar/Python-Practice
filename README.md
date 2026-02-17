@@ -97,6 +97,95 @@ for num in numbers:
 
 print(List)
 ```
+## Q.4:
+```
+Write a Python function to reverse a given string.
+Input: "hello"
+Output: "olleh"
+```
+
+## Answer 4:
+```
+list = []
+
+for i in range(len(Input)-1, -1, -1):
+    list.append(Input[i])
+
+result = ''.join(list)
+print(result)
+```
+## Q.5:
+```
+Write a Python function to check if two given strings are anagrams of each other.
+Input: "listen", "silent"
+Output: True
+```
+
+## Solution 5:
+```
+word1 = sorted(word[0]
+word2 = sorted(word[1]
+if word1 == word2:
+    print("True")
+else:
+    print("False")
+```
+
+## Q.6:
+```
+Write a Python function to remove all duplicate characters in a given string while preserving the order of the remaining characters.
+Input: "programming"
+Output: "progamin"
+```
+
+## Solution 6:
+```
+bucket= []
+for ch in Input:
+    if ch not in bucket:
+        bucket.append(ch)
+
+result = ''.join(bucket)
+print(result)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
