@@ -148,7 +148,38 @@ for ch in Input:
 result = ''.join(bucket)
 print(result)
 ```
+## Q.7:
+```
+Hospital system logs patient visits. You are given a list of patient IDs.
 
+a. Return the top 2 most frequent patients
+b. Sorted by frequency (highest first)
+c. If tie → sort by patient_id alphabetically
+
+Example
+visits = [
+    "P101", "P102", "P101",
+    "P103", "P102", "P102",
+    "P104", "P101"
+]
+
+Expected Output:
+[("P101", 3), ("P102", 3)]
+```
+
+## Solution 7:
+```
+freq = {}
+
+for visit in visits:
+	if visit not in freq:
+		freq[visit] = 1
+	else:
+		freq[visit] += 1
+
+result = sorted(freq.items(), key=lambda x:(-x[1], x[0]))
+print(result[0:2])
+```
 
 
 
