@@ -180,7 +180,30 @@ for visit in visits:
 result = sorted(freq.items(), key=lambda x:(-x[1], x[0]))
 print(result[0:2])
 ```
+## Q.8:
+```
+Find the First Non-Repeating Character
+Write a Python function to find the first non-repeating character in a given string and return its index.
+Input: "swiss"
+Output: 1 (for 'w' in "swiss")
+```
 
+## Solution 8:
+```
+s = "swiss"
+freq = {}
+
+for ch in s:
+    if ch not in freq:
+        freq[ch] = 1
+    elif ch in freq:
+        freq[ch] += 1
+
+for i, ch in enumerate(s):
+    if freq[ch] == 1:
+        print(i)
+        break
+```
 
 
 
