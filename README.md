@@ -222,7 +222,17 @@ Imp Info:
 	.json() converts JSON response into Python dict
 
 ```
+### Read 10GB CSV efficiently
+```
+import pandas as pd
 
+for chunk in pd.read_csv("large_file.csv", chunksize=100000):
+    print(chunk.head())
+
+Key points:
+	•	Do not load whole file into memory
+	•	Process piece by piece
+```
 
 
 
