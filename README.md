@@ -216,6 +216,11 @@ if response.status_code == 200:
     print(data)
 else:
     print("Request failed")
+
+Imp Info:
+	requests.get() makes API call
+	.json() converts JSON response into Python dict
+
 ```
 
 
